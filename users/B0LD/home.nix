@@ -1,4 +1,6 @@
 { config, pkgs, ... }: {
+
+	programs.home-manager.enable = true;
 	
 	imports = [
 		./modules/drives.nix
@@ -26,5 +28,6 @@
 		pkgs.protonup-qt
 	];
 
-	programs.home-manager.enable = true;
+	xdg.configFile."nvim".source = ./dotfiles/nvim;
+	xdg.configFile."hypr".source = ./dotfiles/hypr;
 }
