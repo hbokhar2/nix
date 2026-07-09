@@ -18,7 +18,6 @@
 
 	programs.zsh.enable = true;
 
-
 	networking = {
 		hostName = "Kaguya";
 		networkmanager.enable = true;
@@ -46,4 +45,37 @@
 		packages = [
 		];
 	};
+
+	environment.systemPackages = [
+
+		pkgs.kitty
+		pkgs.wget
+		pkgs.curl
+		pkgs.file
+		pkgs.ripgrep
+		pkgs.less
+		pkgs.fzf
+		pkgs.bat
+		pkgs.unzip
+		pkgs.zip
+		pkgs.dosfstools
+		pkgs.btop
+		pkgs.neovim
+		pkgs.tmux
+		pkgs.gitFull
+		pkgs.openssh
+		pkgs.bat
+		pkgs.clang
+		pkgs.clang-tools
+		pkgs.cmake
+		pkgs.jdk21
+		pkgs.gnumake
+		pkgs.python315
+		pkgs.pyright
+		pkgs.lua-language-server
+		pkgs.gdb
+		pkgs.imv
+
+	];
+
 }

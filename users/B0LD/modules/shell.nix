@@ -30,6 +30,8 @@
 			initContent = ''
 
 				fastfetch
+				stty erase '^?'
+				bindkey -v "$(printf '\x7f')" backward-delete-char
 
 				'';
 
