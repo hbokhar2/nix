@@ -1,36 +1,5 @@
 { config, pkgs, ... }: {
 
-	services = {
-
-		hyprpaper = { 
-
-			enable = true;
-
-			settings = {
-				ipc = "on";
-				preload = [
-					"/home/B0LD/Pictures/Wallpapers/red-abstract-ag-uw.jpg"
-				];
-
-				wallpaper = [
-				{
-					monitor = "DP-3";
-					path = "/home/B0LD/Pictures/Wallpapers/red-abstract-ag-uw.jpg";
-					fit_mode = "contain";
-				}
-				{
-					monitor = "DP-4";
-					path = "/home/B0LD/Pictures/Wallpapers/red-abstract-ag-uw.jpg";
-					fit_mode = "cover";
-				}
-				];
-			};
-
-		};
-
-	};
-
-
 	programs = {
 
 		waybar = {
@@ -65,5 +34,9 @@
 
 		gtk.icon.enable = true;
 	};
+
+	home.packages = [
+		pkgs.hyprpaper
+	];
 
 }

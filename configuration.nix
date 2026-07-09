@@ -19,7 +19,6 @@
 		pkgs.kitty
 			pkgs.wget
 			pkgs.curl
-			pkgs.git
 			pkgs.file
 			pkgs.ripgrep
 			pkgs.less
@@ -31,8 +30,9 @@
 			pkgs.btop
 			pkgs.neovim
 			pkgs.jetbrains-mono
+			pkgs.nerd-fonts.jetbrains-mono
 			pkgs.tmux
-			pkgs.git
+			pkgs.gitFull
 			pkgs.openssh
 			pkgs.bat
 			pkgs.clang
