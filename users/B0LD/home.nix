@@ -28,6 +28,4 @@
 		pkgs.protonup-qt
 	];
 
-	xdg.configFile."nvim".source = ./dotfiles/nvim;
-	xdg.configFile."hypr".source = ./dotfiles/hypr;
 }
