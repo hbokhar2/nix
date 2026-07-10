@@ -1,14 +1,13 @@
 { config, pkgs, ... }: {
 
 	programs = {
-
 		waybar = {
 			enable = true;
 		};
-
 	};
 
 	gtk = {
+
 		enable = true;
 
   		gtk3.extraConfig = {
@@ -18,6 +17,7 @@
   		gtk4.extraConfig = {
     			gtk-application-prefer-dark-theme = true;
   		};
+
 	};
 
 	catppuccin = {
@@ -37,6 +37,21 @@
 
 	home.packages = [
 		pkgs.hyprpaper
+		pkgs.fuzzel
+		pkgs.waybar
 	];
+
+	home.sessionVariables = {
+		XCURSOR_SIZE = "24";
+		HYPRCURSOR_SIZE = "24";
+
+		LIBVA_DRIVER_NAME = "nvidia";
+		__GLX_VENDOR_LIBRARY_NAME = "nvidia";
+		NVD_BACKEND = "direct";
+
+		QT_QPA_PLATFORM = "wayland";
+		QT_WAYLAND_FORCE_DPI = "physical";
+		ELECTRON_OZONE_PLATFORM_HINT = "wayland";
+	};
 
 }

@@ -1,6 +1,6 @@
 {config, pkgs, ...}: {
-	boot = {
 
+	boot = {
 		loader = {
 			grub.enable = true;
 			grub.efiSupport = true;
@@ -13,7 +13,6 @@
 		supportedFilesystems = [ "ntfs" ];
 
 		kernelPackages = pkgs.linuxPackages_latest;
-
 	};
 
 	programs.zsh.enable = true;
@@ -47,8 +46,6 @@
 	};
 
 	environment.systemPackages = [
-
-		pkgs.kitty
 		pkgs.wget
 		pkgs.curl
 		pkgs.file
@@ -75,7 +72,6 @@
 		pkgs.lua-language-server
 		pkgs.gdb
 		pkgs.imv
-
 	];
 
 }

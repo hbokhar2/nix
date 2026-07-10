@@ -28,4 +28,6 @@
 		pkgs.protonup-qt
 	];
 
+	home.file.".local/share/hypr/stubs".source = "${pkgs.hyprland}/share/hypr/stubs";
+
 }

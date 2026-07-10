@@ -1,7 +1,6 @@
 { config, pkgs, ... }: {
 
 	services = {
-
 		xserver.enable = true;
 
 		displayManager.ly = {
@@ -14,30 +13,18 @@
 
 		gvfs.enable = true;
 		tumbler.enable = true;
-
 	};
 
 	programs = {
-
 		hyprland = {
-
 			enable = true;
 			xwayland.enable = true;
-
 		};
 
 		thunar = {
-
 			enable = true;
-
 		};
-
 	};
-
-	environment.systemPackages = [
-		pkgs.fuzzel
-		pkgs.waybar
-	];
 
 	fonts.packages = [
 		pkgs.jetbrains-mono
