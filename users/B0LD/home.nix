@@ -6,6 +6,7 @@
 		./modules/drives.nix
 		./modules/desktop-ui.nix
 		./modules/shell.nix
+		./modules/vesktop.nix
 	];
 
 	home.stateVersion = "26.05"; 
@@ -19,13 +20,16 @@
 		pkgs.obs-studio
 		pkgs.gimp
 		pkgs.fastfetch
-		pkgs.vesktop
 		pkgs.font-manager
 		pkgs.keepassxc
 		pkgs.pywal16
 		pkgs.pavucontrol
 		pkgs.brave
 		pkgs.protonup-qt
+		pkgs.tradingview
+		pkgs.hyprshot
+		pkgs.quickshell
+		pkgs.godot
 	];
 
 	home.file.".local/share/hypr/stubs".source = "${pkgs.hyprland}/share/hypr/stubs";

@@ -39,6 +39,7 @@
 		pkgs.hyprpaper
 		pkgs.fuzzel
 		pkgs.waybar
+		pkgs.hyprpicker
 	];
 
 	home.sessionVariables = {

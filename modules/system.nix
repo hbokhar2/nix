@@ -72,6 +72,7 @@
 		pkgs.lua-language-server
 		pkgs.gdb
 		pkgs.imv
+		pkgs.hyprpolkitagent
 	];
 
 }
