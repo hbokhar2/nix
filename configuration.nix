@@ -7,7 +7,8 @@
 			./modules/display.nix
 			./modules/hardware.nix
 			./modules/drives.nix
-			./modules/programs.nix
+			./modules/steam.nix
+			./modules/dev_tools.nix
 		];
 
 	nix.settings.experimental-features = [ "nix-command" "flakes" ];

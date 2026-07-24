@@ -35,11 +35,12 @@
 		gtk.icon.enable = true;
 	};
 
-	home.packages = [
-		pkgs.hyprpaper
-		pkgs.fuzzel
-		pkgs.waybar
-		pkgs.hyprpicker
+	home.packages = with pkgs [
+		hyprpaper
+		fuzzel
+		waybar
+		hyprpicker
+		imv
 	];
 
 	home.sessionVariables = {
