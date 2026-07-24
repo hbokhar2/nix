@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, pkgs-godot44, ... }: {
 
 	programs.home-manager.enable = true;
 	
@@ -29,7 +29,7 @@
 		pkgs.tradingview
 		pkgs.hyprshot
 		pkgs.quickshell
-		pkgs.godot
+		pkgs-godot44.godot_4
 	];
 
 	home.file.".local/share/hypr/stubs".source = "${pkgs.hyprland}/share/hypr/stubs";
